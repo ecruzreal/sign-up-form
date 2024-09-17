@@ -11,6 +11,45 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url(olena-bohovyk-3BlVILvh9hM-unsplash.jpg);
+    background-size: cover;
     width: 65vh;
     height: 100vh;
+}
+
+.img-back{
+    position: relative;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 35%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    overflow: hidden;
+}
+
+.img-back span{
+    font-family: 'Playfair Display', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+}
+
+#odin{
+    padding: 2%;
+}
+
+.left-side footer{
+    color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 65vh;
+}
+
+footer{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+a{
+    color: white;
 }
