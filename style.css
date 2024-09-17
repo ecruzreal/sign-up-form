@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    background-image: url(olena-bohovyk-3BlVILvh9hM-unsplash.jpg);
+    width: 65vh;
+    height: 100vh;
+}
