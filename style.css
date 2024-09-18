@@ -30,7 +30,7 @@ body{
 
 .img-back span{
     font-family: 'Playfair Display', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 #odin{
@@ -47,9 +47,27 @@ body{
 
 footer{
     display: block;
+    position: relative;
     unicode-bidi: isolate;
 }
 
 a{
     color: white;
+}
+
+input, label{
+    display: block;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.form-block{
+    display: flex;
+    padding: 8px;
 }
