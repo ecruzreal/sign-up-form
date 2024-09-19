@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="form.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,12 +40,12 @@
                                 <div class="form-block">
                                     <div style="margin-right: 3rem; margin-left: 3rem;">
                                         <label for="name">FIRST NAME
-                                            <input type="text" name="name" id="name" placeholder="First Name">
+                                            <input type="text" name="name" id="name" placeholder="First Name" required>
                                         </label>
                                     </div>
                                     <div>
                                         <label for="last-name">LAST NAME</label>
-                                        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                                        <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
                                     </div>
                             </div>
                             </section>
@@ -52,11 +53,11 @@
                                 <div class="form-block">
                                     <div style="margin-right: 3rem; margin-left: 3rem;">
                                         <label for="email">EMAIL</label>
-                                        <input type="email" name="email" id="email" placeholder="user@example.com">
+                                        <input type="email" name="email" id="email" placeholder="user@example.com" required>
                                     </div>
                                     <div>
                                         <label for="phone">PHONE NUMBER</label>
-                                        <input type="number" name="phone" id="phone" placeholder="##########">
+                                        <input type="number" name="phone" id="phone" placeholder="##########" required>
                                     </div>
                                 </div>
                             </section>
@@ -64,16 +65,18 @@
                                 <div class="form-block" style="margin-bottom: 1rem;">
                                     <div style="margin-right: 3rem; margin-left: 3rem;">
                                         <label for="password">PASSWORD</label>
-                                        <input type="password" name="password" id="password">
+                                        <input type="password" name="password" id="password" minlength="8"
+                                         placeholder="Minimum 8 characters" required>
                                     </div>
                                     <div>
                                         <label for="confirm">CONFIRM PASSWORD</label>
-                                        <input type="password" name="confirm" id="confirm">
+                                        <input type="password" name="confirm" id="confirm" minlength="8" required>
                                     </div>
                                 </div>
                             </section>
+                            <span id="pass-error">Passwords do not match</span>
                         </div>
-                        <button id="submit" type="submit">Create Account</button>
+                        <button id="submitbtn" type="submit">Create Account</button>
                     </form>
                 </div>
                 <div id="bottom-right">Already have an account? <a href="#" id="login">Log in</a></div>
