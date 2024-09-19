@@ -65,8 +65,21 @@ a{
     color: white;
 }
 
+input{
+    padding: .25rem;
+    width: 8rem;
+    font-size: .6rem;
+}
+
 input, label{
     display: block;
+}
+
+input:focus{
+    outline: none;
+    border: solid 2px rgb(70, 114, 70);
+    border-radius: .2rem;
+    box-shadow: 2px 2px 10px rgb(177, 177, 177);
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -116,7 +129,27 @@ label{
 }
 
 #submit{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
     margin: 1.5rem;
     margin-left: 3.5rem;
-    width: 8rem;
+    width: 9rem;
+    background-color: rgb(70, 114, 70);
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+#bottom-right{
+    margin-left: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#login{
+    color: rgb(70, 114, 70);
+    text-decoration: none;
+    font-weight: bold;
 }
