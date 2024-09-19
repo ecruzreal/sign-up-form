@@ -11,10 +11,12 @@
 </head>
 <body>
     <div class="content">
-        <div class="left-side">
-            <div class="img-back">
-                <img id="odin" src="odin-lined.png" alt="Odin" width="80px" height="auto">
-                <span>Odin</span>
+        <div class="left-outer">
+            <div class="left-side">
+                <div class="img-back">
+                    <img id="odin" src="odin-lined.png" alt="Odin" width="80px" height="auto">
+                    <span>Odin</span>
+                </div>
             </div>
             <footer>
                 <p>Photo by <a href="https://unsplash.com/@olenkasergienko?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Olena Bohovyk</a> on <a href="https://unsplash.com/photos/green-pine-tree-during-daytime-3BlVILvh9hM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -30,44 +32,47 @@
             </div>
             <div class="form-container">
                 <form action="#" method="post">
-                    <legend>Let's do this!</legend>
-                    <section>
-                        <div class="form-block">
-                            <div style="margin-right: 30px;">
-                                <label for="name">FIRST NAME
-                                    <input type="text" name="name" id="name">
-                                </label>
-                            </div>
-                            <div>
-                                <label for="last-name">LAST NAME</label>
-                                <input type="text" name="last-name" id="last-name">
-                            </div>
-                       </div>
-                    </section>
-                    <section>
-                        <div class="form-block">
-                            <div style="margin-right: 30px;">
-                                <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div>
-                                <label for="phone">PHONE NUMBER</label>
-                                <input type="number" name="phone" id="phone">
-                            </div>
+                    <div id="input-wrapper">
+                        <legend style="margin-left: 3.5rem;">Let's do this!</legend>
+                        <section>
+                            <div class="form-block">
+                                <div style="margin-right: 3rem; margin-left: 3rem;">
+                                    <label for="name">FIRST NAME
+                                        <input type="text" name="name" id="name">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="last-name">LAST NAME</label>
+                                    <input type="text" name="last-name" id="last-name">
+                                </div>
                         </div>
-                    </section>
-                    <section>
-                        <div class="form-block">
-                            <div style="margin-right: 30px;">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
+                        </section>
+                        <section>
+                            <div class="form-block">
+                                <div style="margin-right: 3rem; margin-left: 3rem;">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div>
+                                    <label for="phone">PHONE NUMBER</label>
+                                    <input type="number" name="phone" id="phone">
+                                </div>
                             </div>
-                            <div>
-                                <label for="confirm">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm" id="confirm">
+                        </section>
+                        <section>
+                            <div class="form-block">
+                                <div style="margin-right: 3rem; margin-left: 3rem;">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password" id="password">
+                                </div>
+                                <div>
+                                    <label for="confirm">CONFIRM PASSWORD</label>
+                                    <input type="password" name="confirm" id="confirm">
+                                </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
+                    <button id="submit" type="submit">Create Account</button>
                 </form>
             </div>
         </div>

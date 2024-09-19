@@ -1,19 +1,33 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(250, 250, 250);
+    height: 100vh;
 }
 
 .content{
     display: flex;
+    height: 100vh;
+}
+
+.left-outer{
+    width: 40%;
+    background-image: url(olena-bohovyk-3BlVILvh9hM-unsplash.jpg);
+    background-size: cover;
 }
 
 .left-side{
     display: flex;
     flex-direction: column;
-    background-image: url(olena-bohovyk-3BlVILvh9hM-unsplash.jpg);
-    background-size: cover;
-    width: 65vh;
-    height: 100vh;
+    height: 90vh;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .img-back{
@@ -37,18 +51,13 @@ body{
     padding: 2%;
 }
 
-.left-side footer{
+footer{
+    display: flex;
     color: white;
-    position: fixed;
+    position: relative;
     bottom: 0;
     text-align: center;
-    width: 65vh;
-}
-
-footer{
-    display: block;
-    position: relative;
-    unicode-bidi: isolate;
+    justify-content: center;
 }
 
 a{
@@ -69,5 +78,28 @@ input[type=number]::-webkit-outer-spin-button {
 
 .form-block{
     display: flex;
-    padding: 8px;
+}
+
+section{
+    padding: .5rem;
+}
+
+#input-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    width: 65vw;
+}
+
+.text-content{
+    width: 40vw;
+    margin-left: 2rem;
+    padding: 1.5rem;
+}
+
+#submit{
+    margin: 1.5rem;
+    margin-left: 3.5rem;
+    width: 8rem;
 }
